@@ -1,4 +1,4 @@
-const button = document.querySelector("button");
+const button = document.querySelector("button")! as HTMLButtonElement;
 const input1 = document.getElementById("num1")! as HTMLInputElement;
 const input2 = document.getElementById("num2")! as HTMLInputElement;
 
@@ -55,7 +55,7 @@ type combine = string | number;
 
 const numberOrString:combine = 'A';
 
-const customFunction:Function = add2 ;
+const customFunction:Function = add2;
 
 const add3 = (num1: number, num2: number, cb:(sum:number) => string) => {
     cb(num1 + num2);
